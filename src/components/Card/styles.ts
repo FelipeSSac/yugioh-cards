@@ -5,7 +5,8 @@ export const Container = styled.article`
 
   border-radius: 10px;
   perspective: 1000px;
-  z-index: 10;
+  animation: toBack 2s ease forwards;
+
   transition: transform 2s ease;
 
   .card{ 
@@ -21,7 +22,9 @@ export const Container = styled.article`
     transform: rotate3d(10deg, 10deg, 10deg, 10deg);
 
     &:hover {
-      transform: rotateY(180deg);
+      -webkit-box-shadow:0 0 30px #B037D4; 
+      -moz-box-shadow: 0 0 30px #B037D4;  
+      box-shadow: 0 0 30px #B037D4;
     }
   }
 
@@ -46,7 +49,8 @@ export const Container = styled.article`
   }
 
   &.current-card{
-    transform: scale(1.1);
+    animation: toFront 2s ease forwards;
+    transform: scale(1.3);
     
     .card{
       -webkit-box-shadow:0 0 30px #B037D4; 
@@ -55,5 +59,15 @@ export const Container = styled.article`
 
       transform: rotateY(180deg);
     }
+  }
+
+  @keyframes toBack {
+    from {z-index: 10;}
+    to {z-index: 8;}
+  }
+
+  @keyframes toFront {
+    from {z-index: 8;}
+    to {z-index: 10;}
   }
 `

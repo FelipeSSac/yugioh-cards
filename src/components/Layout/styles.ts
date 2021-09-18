@@ -4,6 +4,10 @@ export const Container = styled.main`
   width: 100%;
   min-height: 100vh;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   position: relative;
   overflow: hidden;
 
@@ -37,17 +41,39 @@ export const Container = styled.main`
     }
   }
 
-  .cards-container{
+  .card-details{
     width: 100%;
+    height: 100%;
 
     position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);  
+    z-index: 9;
+    inset: 0;
+
+    background: rgb(128,0,128);
+    background: linear-gradient(65deg, rgba(128,0,128,1) 17%, rgba(97,5,31,1) 52%, rgba(247,122,31,0) 100%);
+    animation: showModal 2s ease forwards;
+
+    &.hide-details{
+      animation: hideModal 2s ease forwards;
+    }
+  }
+
+  .cards-container{
+    width: 100%;
     
     display: flex;
     gap: 2rem;
     justify-content: center;
     align-items: center;
+  }
+
+  @keyframes showModal {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  @keyframes hideModal {
+    from {opacity: 1;}
+    to {opacity: 0;}
   }
 `

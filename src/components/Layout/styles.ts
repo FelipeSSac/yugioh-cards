@@ -49,9 +49,34 @@ export const Container = styled.main`
     z-index: 9;
     inset: 0;
 
-    background: rgb(128,0,128);
-    background: linear-gradient(65deg, rgba(128,0,128,1) 17%, rgba(97,5,31,1) 52%, rgba(247,122,31,0) 100%);
     animation: showModal 2s ease forwards;
+
+    .card-details__image{
+      width: auto;
+      height: 50rem;
+
+      position: absolute;
+      z-index: -1;
+      top: calc(45% - 25rem);
+      left: 0;
+
+      mask-image: radial-gradient(circle, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.6) 74%, rgba(0,0,0,0) 100%);
+      object-fit: cover;
+
+    }
+
+    &::after{
+      content: " ";
+      width: 100%;
+      height: 100%;
+
+      position: absolute;
+      z-index: -2;
+      inset: 0;
+
+      background: rgb(128,0,128);
+      background: linear-gradient(65deg, rgba(128,0,128,0.8) 17%, rgba(97,5,31,0.8) 52%, rgba(247,122,31,0) 100%);
+    }
 
     &.hide-details{
       animation: hideModal 2s ease forwards;

@@ -24,15 +24,36 @@ export const GlobalStyle = createGlobalStyle`
     }
   }
 
-  @media (max-width: 800px) {
+  @media (max-width: 940px) {
     html {
       font-size: 75%;
     }
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 813px) {
     html {
       font-size: 70%;
+      font-family: sans-serif;
+    }
+  }
+
+  @media (max-width: 750px) {
+    html {
+      font-size: 55%;
+      font-family: sans-serif;
+    }
+  }
+
+  @media (max-width: 620px) {
+    html {
+      font-size: 40%;
+      font-family: sans-serif;
+    }
+  }
+
+  @media (max-width: 440px) {
+    html {
+      font-size: 30%;
       font-family: sans-serif;
     }
   }

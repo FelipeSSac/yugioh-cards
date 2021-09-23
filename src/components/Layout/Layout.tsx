@@ -47,7 +47,7 @@ export default function Layout() {
   }
  
   useEffect(() => {
-    api.get(`?name=Dark Magician|Baby Dragon|Time Wizard`).then(
+    api.get(`?name=Dark Magician|Blue-Eyes White Dragon|Dark Magician Girl`).then(
       response => {        
         setData(response.data.data)
         
@@ -55,7 +55,7 @@ export default function Layout() {
           prevState.map((state,i)=> ({
             ...state,
             image: response.data.data[i].card_images[0].image_url,
-            secondary_image: response.data.data[i].card_images[1]?.image_url
+            secondary_image: response.data.data[i].card_images[2]?.image_url
           }))
         ))
       }
@@ -72,9 +72,7 @@ export default function Layout() {
             className="card-details"
             onClick={() => handleDetailsClick({cardRef, detaislRef, setShowModal})}
           >
-            <h1>{cardDetails?.name}</h1>
-            <h3>Race: {cardDetails?.race}</h3>
-            <h3>Type: {cardDetails?.type}</h3>
+            <img className="card-details__image" src={cardDetails?.secondary_image} alt="card" />
           </div>
         )}
         {data.map((card, i)=> (

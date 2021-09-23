@@ -15,7 +15,7 @@ This project was developed using the following technologies:
 
 ### Preview the project [here](yugioh-cards.vercel.app)
 
-Simple React application using Yu-Gi-Oh's API to train 3D handling, dinamic position and animation properties, you can check it out by clicking on every card on screen.
+Simple React application using Yu-Gi-Oh's API to practice 3D handling, dinamic position and animation properties, you can check it out by clicking on every card on screen.
 
  ## 🔨 Project Architecture
 

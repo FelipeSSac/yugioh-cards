@@ -1,46 +1,65 @@
-# Getting Started with Create React App
+<h1 align="center">Yugioh Cards</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## ✨ Technologies
 
-## Available Scripts
+This project was developed using the following technologies:
 
-In the project directory, you can run:
+- [React](https://reactjs.org/)
+- [React DOM](https://pt-br.reactjs.org/docs/react-dom.html)
+- [Create REACT-APP](https://github.com/facebook/create-react-app)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Styled-components](https://www.styled-components.com/)
+- [Axios](https://axios-http.com/docs/intro)
 
-### `yarn start`
+## 💻 Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Preview the project [here](yugioh-cards.vercel.app)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Simple React application using Yu-Gi-Oh's API to train 3D handling, dinamic position and animation properties, you can check it out by clicking on every card on screen.
 
-### `yarn test`
+ ## 🔨 Project Architecture
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ Project Architecture based on Atomic Design.
 
-### `yarn build`
+ ```
+ src
+ ├──assets
+ │   ├──images
+ │   └──styles
+ ├──components
+ ├──helpers
+ │   └──handlers
+ └──services
+ ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ ## 🧪 Components
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+ ```
+ Component
+  ├──Component.tsx
+  └──styles.ts
+ ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 How to run
 
-### `yarn eject`
+Clone this repository.
+```bash
+# Run to install dependencies.
+$ yarn
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Run to start the project on `localhost:3000`.
+$ yarn start
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🚧 How to build
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Clone this repository.
+```bash
+# Run to install dependencies.
+$ yarn
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Run to start building the project.
+$ yarn build
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Builded project it´s now available at folder `root/build`
+```

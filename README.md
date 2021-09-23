@@ -19,8 +19,6 @@ Simple React application using Yu-Gi-Oh's API to practice 3D handling, dinamic p
 
  ## 🔨 Project Architecture
 
- Project Architecture based on Atomic Design.
-
  ```
  src
  ├──assets
